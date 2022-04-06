@@ -1,277 +1,123 @@
 /* Header */
 body{
-    background-image: url(./backend/gris.jpg);
+    background-image: url(./backend/Illustration2.jpg);
 }
 
-.navbar-brand img {
-    width: 190px;
-    padding: 3px 0 0 8px;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar, .productCard {
-    display: flex;
-    border-radius: 20px;
+.html {
+  font-size: 62.5%;
 }
 
-.container-gris img{
-    width: 100%;
-    height: 108px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
 }
 
 .navbar {
-    justify-content: space-between;
-}
-
-.internal-link {
-    padding-top: 35px;
-}
-
-.productCard, .cardProduct, .internal-link a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    font-weight: 400;
-}
-
-.internal-link a {
-    padding-right: 25px;
-}
-
-/* Bloc 1 -- Présentation */
-
-.jumbotron {
-    position: relative;
-}
-.jumbotron img {
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 12px;
-    object-fit: cover;
-}
-
-
-.jumbotron > .text-jumbotron {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-    text-shadow: 1px 1px 2px #24111f;
-}
-
-/* Produits */
-
-.productCard, .cardProduct {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    width: 100%;
-    height: 400px;
-}
-
-.productImage, .imageProduct {
-    height: 70%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.productPrice, .priceProduct {
-    border: 7px white solid;
-    background-color: white;
-} 
-
-.namePrice, .priceName {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-}
-
-.productStory, .storyProduct {
-    padding: 0 10px;
-    margin-top: 15px;
-}
-
-.productDescription, .descriptionProduct {
-    margin-bottom: 15px;
-    font-size: 15px;
-}
-
-#product {
-    background-color: rgb(243, 233, 241);
-    height: 510px;
-    border-radius: 12px;
-}
-
-#supprimer {
-    height: 45px;
-    width: 59px;
-    margin-top: 42px;
-}
-
-button {
-    background-color: rgb(204, 204, 255);
-    font-weight: bold;
-}
-/* Panier */
-
-.titrePanier {
-    font-size: 24px;
-}
-
-#articleImage {
-    width: 50%;
-    padding: 10px 0 10px 5px;
-}
-
-#basket-resume {
-    margin-top: 10px;
-}
-
-.contenantArticle {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #F2E0E0;
-    border: 4px solid lightslategrey;
+  position: fixed;
+  width: 100%;
+  color: #000;
+  opacity: 0.85;
+  height: 78px;
+  z-index: 12;
 
 }
 
-.contenantDescription {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-weight: bold;
-    width: 50%;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 87px;
+  align-items: center;
 }
 
-.form-control {
-    display: block;
-    width: 90%;
-    height: 5px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.menu-items {
+  order: 2;
+  display: flex;
+  padding-top: 20px;
 }
 
-.btn {
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+.menu-items li {
+  list-style: none;
+  margin-left: 4.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.confirmation {
-    text-align: center;
-    border: 3px darkviolet dashed;
-    margin-top: 10px;
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-/* breakpoint */
-@media only screen and (min-width: 768px){
-
-#supprimer {
-    width: 30px;
-    position: absolute;
-    margin-top: 94px;
-    left: 30px;
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
 }
 
-#articleImage {
-    width: 30%
+.logo {
+  order: 1;
 }
 
-.color {
-    position: absolute;
-    margin-left: 639px;
-    margin-top: -127px;
+.logo img {
+  width: 35%;
+  padding-top: 18px;
 }
 
-.contenantDescription {
-    line-height: 8;
-    flex-direction: row;
-}
-}
+/* ............/Présentation/............ */
 
-@media only screen and (min-width: 992px){
 
-    .container-page {
-        max-width: 1250px;
-	    margin: auto;
-    }
+.photo-rafclan {
+  display: flex;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  flex-direction: column;
+  background: 
+  linear-gradient(
+      to right, #000, #333, #555,#fff,#fff,#555,#333,#000
+    ),
+    linear-gradient(
+      to right, #000, #333, #555,#fff,#fff,#555,#333,#000
+    )
+     
+    white;
+    background-size:100% 5px;
+    padding:5px 10px
 
-    .productCard {
-        width: calc( 33.33% - 20px);
-    }
-
-    .jumbotron img {
-        height: 500px;
-    }
-
-    .cardProduct {
-        padding: 0;
-        display: flex;
-        margin-top: 15px;
-        width: 100%;
-        flex-direction: row;
-    }
-    
-    #supprimer {
-        left: 44px;
-        margin-top: 178px;
-    }
-
-    .imageProduct {
-        height: 100%;
-        width: 50%;
-        object-fit: cover;
-        border-radius: 20px;
-    }
-    
-    .priceName {
-        text-align: center;
-    }
-
-    .descriptionProduct {
-        padding: 45px 0;
-        font-size: 32px;
-    }
-
-    #boutons {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #product {
-        height: 482px;
-    }
-
-    .contenantDescription {
-        line-height: 8;
-    }
-    
+  
 }
 
-footer {
-    text-transform: capitalize;
-    text-align: center;
+.photo-rafclan img {
+  width:100%;
 }
 
-@media only screen and (min-width: 1150px){
-
-    .contenantDescription {
-        line-height: 8;
-    }
+.paragraphe {
+  background-color: black;
+  opacity: 0.5;
+}
+.paragraphe h1 {
+  color:#fff;
+  padding-top: 15px;
 }
